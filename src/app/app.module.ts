@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DiceComponent } from './components/dice/dice.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DiceComponent
+    DiceComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
