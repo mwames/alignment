@@ -18,5 +18,4 @@ export class DiceComponent implements OnInit {
         }
         return rollResult;
     }
-
 }
