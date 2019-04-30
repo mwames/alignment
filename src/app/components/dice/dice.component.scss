@@ -1,25 +1,29 @@
+input {
+    width: 10%;
+    border: none;
+}
+
 .dieBar {
     position: fixed;
-    bottom: 0;
+    bottom: 41px;
     left: 0;
     width: 100%;
     height: 2em;
     line-height: 1em;
 }
 
-.dieBox {
-    position: relative;
+.icon {
     display: inline-block;
-    width: 16%;
-    cursor: pointer;
-    border-top: solid 1px black;
 }
+
 .dieCountBox {
     position: relative;
     display: inline-block;
-    width: 16%;
+    width: 14%;
     cursor: pointer;
     border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
 .right-border {
@@ -32,4 +36,36 @@
 
 .d20:hover {
     background-color: orange;
+}
+
+.d16:hover {
+    background-color: blue;
+}
+
+.d12:hover {
+    background-color: green;
+}
+
+.d10:hover {
+    background-color: violet;
+}
+
+.d8:hover {
+    background-color: yellow;
+}
+
+.d6:hover {
+    background-color: red;
+}
+
+.d4:hover {
+    background-color: cyan;
+}
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
 }

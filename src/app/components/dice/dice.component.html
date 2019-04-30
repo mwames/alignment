@@ -1,15 +1,92 @@
 <div class="dieBar">
-    <div class="dieCountBox right-border left-border d20">1</div>
-    <div class="dieCountBox right-border">1</div>
-    <div class="dieCountBox right-border">1</div>
-    <div class="dieCountBox right-border">1</div>
-    <div class="dieCountBox right-border">1</div>
-    <div class="dieCountBox right-border">1</div>
-    <br />
-    <div class="dieBox right-border left-border d20">d20</div>
-    <div class="dieBox right-border">d16</div>
-    <div class="dieBox right-border">d12</div>
-    <div class="dieBox right-border">d8</div>
-    <div class="dieBox right-border">d6</div>
-    <div class="dieBox right-border">d4</div>
+    <div class="dieCountBox">
+        <div class="d20" (click)="increment('d20Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d20Count" />
+            <span class="noselect">x d20</span>
+        </div>
+        <div class="d20" (click)="decrement('d20Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+
+    <div class="dieCountBox">
+        <div class="d16" (click)="increment('d16Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d16Count" />
+            <span class="noselect">x d16</span>
+        </div>
+        <div class="d16" (click)="decrement('d16Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+
+    <div class="dieCountBox">
+        <div class="d12" (click)="increment('d12Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d12Count" />
+            <span class="noselect">x d12</span>
+        </div>
+        <div class="d12" (click)="decrement('d12Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+
+    <div class="dieCountBox">
+        <div class="d10" (click)="increment('d10Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d10Count" />
+            <span class="noselect">x d10</span>
+        </div>
+        <div class="d10" (click)="decrement('d10Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+    
+    <div class="dieCountBox">
+        <div class="d8" (click)="increment('d8Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d8Count" />
+            <span class="noselect">x d8</span>
+        </div>
+        <div class="d8" (click)="decrement('d8Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+
+    <div class="dieCountBox">
+        <div class="d6" (click)="increment('d6Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d6Count" />
+            <span class="noselect">x d6</span>
+        </div>
+        <div class="d6" (click)="decrement('d6Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
+
+    <div class="dieCountBox right-border">
+        <div class="d4" (click)="increment('d4Count')">
+            <fa-icon [icon]="caretUp"></fa-icon>
+        </div>
+        <div>
+            <input [(ngModel)]="d4Count" />
+            <span class="noselect">x d4</span>
+        </div>
+        <div class="d4" (click)="decrement('d4Count')">
+            <fa-icon [icon]="caretDown"></fa-icon>
+        </div>
+    </div>
 </div>
